@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup design</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <!-- <div class="container">
+       <button type="submit" class="btn">Submit</button>
+       <div class="popup">
+        <img src="404-tick.png">
+        <h2>thank you!</h2>
+        <p>your details has been successfully submitted, thanks!</p>
+        <button type="button" class="okbtn">OK</button>
+       </div>
+    </div> -->
+
+
+
+
+    <div class="container">
+        <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+        <div class="popup" id="popup">
+         <img src="404-tick.png">
+         <h2>thank you!</h2>
+         <p>your details has been successfully submitted, thanks!</p>
+         <button type="button" onclick="closePopup()">OK</button>
+        </div>
+     </div>
+
+    <script>
+
+        let popup = document.getElementById('popup');
+        let openPopup = () => {
+            popup.classList.add('open-popup');
+        }
+
+        let closePopup = () => {
+            popup.classList.remove('open-popup');
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // let Btn = document.querySelector('.btn');
+        // let Popup = document.querySelector('.popup');
+        // let Okbtn = document.querySelector('.okbtn');
+        // Btn.addEventListener('click', () => {
+        //     Popup.style.display = 'block';
+        //     Popup.style.top = '50%';
+        // })
+
+        // Okbtn.addEventListener('click', () => {
+        //     Popup.style.display = 'none';
+        // })
+    </script>
+</body>
+</html>
